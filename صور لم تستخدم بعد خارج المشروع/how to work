@@ -1,0 +1,12 @@
+
+to install react project write in command line 
+   npx create-react-app myapp
+
+to run app and use the server link
+   npm run start
+
+
+to check node.js write in command ==> node -v
+and to check npm had existed write ==> npm -v
+
+to delete the cach memory write ==> npm cach clean --force
