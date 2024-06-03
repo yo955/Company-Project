@@ -1,0 +1,44 @@
+ .case-study{
+    background-color:rgb(237 237 237);
+    padding:100px 0 ;
+   
+} 
+
+
+
+.container-caseStudy span{
+    display: block;
+    font-weight: 300;
+    font-size: 30px;
+}
+.container-caseStudy h2{
+    margin-bottom: 60px;
+}
+
+.flex-caseStudy{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container-caseStudy .text{
+    padding: 40px 50px;
+    border-radius:  2px 15px;
+    border: 1px solid rgb(230, 229, 229);
+
+ 
+}
+
+.text h3 , p{
+    text-align: left;
+}
+.text p{
+    color:rgb(143, 141, 141)
+}
+
+ a{
+    float: right;
+    text-decoration: none;
+    margin-top: 60px;
+    color:var(--perpel-color)
+}

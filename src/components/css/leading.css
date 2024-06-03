@@ -1,0 +1,30 @@
+
+
+.leading-flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.text-leading hr , .end-leading hr{
+    float: left;
+    width:5%;
+}
+.text-leading p{
+    margin-bottom: 60px;
+}
+.end-leading{
+    text-align: left;
+}
+.end-leading h2{
+    display: block;
+}
+
+ .text-leading a {
+    float: left;
+    cursor: pointer;
+    color: var(--perpel-color-btn);
+    margin-top:60px;
+    
+}
