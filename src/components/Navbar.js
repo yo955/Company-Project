@@ -3,8 +3,15 @@ import React from 'react';
 import logoName from '../photos/logo-name.png';
 import logoIcon from '../photos/logo-icon.png';
 import './css/navbar.css';
-export default function Navbar(){
-    return(
+//mui
+import { useTheme } from '@emotion/react';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import IconButton from '@mui/material/IconButton';
+
+export default function Navbar({setMymode}){
+  const theme = useTheme()
+    return( 
   <nav className="navbar">
   <div className = "logo">
     <img src = {logoName} className ="logo-name" alt ="Logo Navbar"/>
@@ -22,7 +29,14 @@ export default function Navbar(){
   </div>
   <div className = "contact-btn">
     <button>Contact US</button>
+
   </div>
+  <IconButton sx={{ ml: 1 }} onClick={()=>{
+    setMymode(theme.palette.mode==="light"?"dark":"light")
+  }}
+  color="inherit">
+  {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+</IconButton>
   </nav>
     );
 }

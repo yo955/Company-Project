@@ -7,36 +7,38 @@ import Custmors from './components/Custmers';
 import Leading from './components/Leading';
 import Building from './components/Building';
 import CaseStudy from './components/CaseStudy';
+import { useState } from 'react';
+//mui
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+
+
+
 function App() {
+  const [myMode,setMymode] = useState("light");
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: myMode,
+    },
+  });
+
   return (
-   
+    <ThemeProvider theme={darkTheme}>
+       <CssBaseline />
+       
     <div className ="container">
-         <Navbar/>
+    <Navbar setMymode={setMymode}/>
     <Header/>
     <Custmors/>
     <Leading/>    
     <CaseStudy/>
     <Building/>
-    
       </div>
+      </ThemeProvider>
   
     
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 
