@@ -42,3 +42,9 @@ section .building{
     color: var(--perpel-color);
     font-family: emoji;
 } */
+.building-flex:nth-child(odd) .building-photo{
+    order: 2;
+}
+.building-flex:nth-child(odd) .text-building{
+    order: 1;
+}
