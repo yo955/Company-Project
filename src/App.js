@@ -8,6 +8,7 @@ import Leading from './components/Leading';
 import Building from './components/Building';
 import CaseStudy from './components/CaseStudy';
 import { useState } from 'react';
+import SimpleSlider from './components/SimbleSlider';
 //mui
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -30,11 +31,13 @@ function App() {
        
     <div className ="container">
     <Navbar setMymode={setMymode}/>
+    <SimpleSlider/>
     <Header/>
     <Custmors/>
     <Leading/>    
     <CaseStudy/>
     <Building/>
+  
       </div>
       </ThemeProvider>
   
