@@ -7,11 +7,15 @@ import Custmors from './components/Custmers';
 import Leading from './components/Leading';
 import Building from './components/Building';
 import CaseStudy from './components/CaseStudy';
+import Developement from './components/Developement';
+import Advertising from './components/Advertising';
+
 import { useState } from 'react';
 import SimpleSlider from './components/SimbleSlider';
 //mui
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import Footer from './components/Footer';
 
 
 
@@ -28,17 +32,18 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
        <CssBaseline />
-       
     <div className ="container">
     <Navbar setMymode={setMymode}/>
-    <SimpleSlider/>
     <Header/>
-    <Custmors/>
+    <SimpleSlider/>
     <Leading/>    
+    <Custmors/>
     <CaseStudy/>
     <Building/>
-  
-      </div>
+    <Developement/>
+    <Advertising/>
+    <Footer/>
+    </div>
       </ThemeProvider>
   
     

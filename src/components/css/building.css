@@ -35,13 +35,7 @@ section .building{
     height:400px
 
 }
-/* P:nth-child(4){
-    border-left: 2px solid rgb(172, 40, 172);
-    border-width: 5px;
-    padding: 20px;
-    color: var(--perpel-color);
-    font-family: emoji;
-} */
+
 .building-flex:nth-child(odd) .building-photo{
     order: 2;
 }

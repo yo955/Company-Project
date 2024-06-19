@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import photo1 from '../photos/photo1.png'
 import photo2 from '../photos/photo2.png'
 import photo3 from '../photos/photo3.png'
-
+import './css/slider.css'
 
 function SimbleSlider() {
   const CardArray = [
@@ -53,7 +53,7 @@ function SimbleSlider() {
     </div>
       
     )
-  })
+  }) 
   const ShowCard = ()=>{
     return (
       <div className="slider-container">
@@ -63,6 +63,8 @@ function SimbleSlider() {
      </div>
     )
   }
+  
+  
  
 
   return(
